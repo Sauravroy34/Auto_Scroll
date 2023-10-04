@@ -36,7 +36,7 @@ while True:
         y = int(landmarks[1].y * frame_height)
         z = int(landmarks[1].z * 100)
         print(y)
-        if y < 170:
+        if y < 200:
             pd.press("up")
         elif y>250:
             pd.press("down")
