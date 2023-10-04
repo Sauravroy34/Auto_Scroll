@@ -34,18 +34,19 @@ while True:
         
         x = int(landmarks[1].x * frame_width)
         y = int(landmarks[1].y * frame_height)
-        z = int(landmarks[1].z * 100)
-        print(y)
         if y < 200:
             pd.press("up")
         elif y>250:
             pd.press("down")
-        if x > 300:
+        if x > 320:
             pd.press("right")
+           
           
-        elif x < 200:
+        elif x < 180:
             
             pd.press("left")
+            
+           
            
 
   
