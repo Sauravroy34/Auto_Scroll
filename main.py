@@ -8,9 +8,6 @@ face_mesh = mp.solutions.face_mesh.FaceMesh(max_num_faces=1)
 frame_width = 640
 frame_height = 480
 
-landmarks_points = None
-
-
 cap = cv2.VideoCapture(0)
 
 while True:
@@ -50,7 +47,7 @@ while True:
            
 
   
-    cv2.imshow("face", frame)
+    cv2.imshow("face", new_frame)
 
    
     if cv2.waitKey(2) & 0xFF == ord("d"):
