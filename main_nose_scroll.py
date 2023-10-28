@@ -47,7 +47,7 @@ while True:
            
 
   
-    cv2.imshow("face", new_frame)
+    cv2.imshow("face", frame)
 
    
     if cv2.waitKey(2) & 0xFF == ord("d"):
